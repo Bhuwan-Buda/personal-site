@@ -1,101 +1,83 @@
 import React from "react";
 import { Grid, Box, Typography } from "@mui/material";
-import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-import image from "../../Assets/image_bg_removed.png";
-import htmlLogo from "../../Assets/html_logo.png";
-import cssLogo from "../../Assets/css_logo.png";
-import javaScriptLogo from "../../Assets/javascript_logo.png";
-import bootstrapLogo from "../../Assets/bootstrap_logo.png";
-import reactLogo from "../../Assets/react_logo.png";
-import muiLogo from "../../Assets/mui_logo.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import "./style.css";
 
 const HomepageImage = () => {
   return (
     <Grid
       container
-      spacing={2}
-      direction="column"
+      spacing={1}
+      direction={{ xs: "column", sm: "column", md: "column" }}
       justifyContent="center"
       alignItems="center"
       className="image-container"
     >
-      <Grid item>
-        <Box className="image-box">
-          <img src={image} alt="image " />
-        </Box>
-      </Grid>
-      <Grid item>
-        <Typography variant="subtitle1" component="p">
-          Hi There, I Am Bhuwan <br /> Frontend Developer
+      <Grid item xs={12}>
+        <Typography variant="body1" component="p">
+         - HELLO -
         </Typography>
-        <br />
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="body2" component="h5">
+          My Name is <strong>Bhuwan Buda</strong>
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography variant="subtitle1" component="i">
+          I'm a frontend developer.
+        </Typography>
+      </Grid>
+      <Grid item xs={12} sx={{ my: 2 }}>
         <Stack
           direction={{ xs: "column", sm: "row", md: "row" }}
           spacing={{ xs: 1, sm: 1, md: 2 }}
           divider={<Divider orientation="vertical" flexItem />}
         >
           <Chip
-            avatar={<Avatar alt="html" src={htmlLogo}></Avatar>}
-            label="Html"
-            variant="outlined"
-            color="success"
-            component="a"
-            target="_blank"
-            href="https://www.w3schools.com/html/default.asp"
-            clickable
-          />
-          <Chip
-            avatar={<Avatar alt="css" src={cssLogo}></Avatar>}
-            label="CSS"
+            avatar={<FacebookIcon sx={{ borderRadius: "100%" }} />}
+            label="Facebook"
             variant="outlined"
             color="primary"
             component="a"
             target="_blank"
-            href="https://css-tricks.com/"
+            href="https://www.facebook.com/bhuwan.buda.1"
             clickable
           />
           <Chip
-            avatar={<Avatar alt="javascript" src={javaScriptLogo}></Avatar>}
-            label="JavaScript"
+            avatar={<GitHubIcon sx={{ borderRadius: "100%" }} />}
+            label="GitHub"
             variant="outlined"
             color="default"
             component="a"
             target="_blank"
-            href="https://www.javascript.com/"
+            href="https://github.com/Bhuwan-Buda"
             clickable
           />
           <Chip
-            avatar={<Avatar alt="bootstrap" src={bootstrapLogo}></Avatar>}
-            label="Bootstrap"
+            avatar={<LinkedInIcon sx={{ borderRadius: "100%" }} />}
+            label="Linked In"
             variant="outlined"
-            color="error"
+            color="success"
             component="a"
             target="_blank"
-            href="https://getbootstrap.com/"
+            href="https://www.linkedin.com/in/bhuwan-buda-a7538b180/"
             clickable
           />
           <Chip
-            avatar={<Avatar alt="react" src={reactLogo}></Avatar>}
-            label="React"
+            avatar={<InstagramIcon sx={{ borderRadius: "100%" }} />}
+            label="Instagram"
             variant="outlined"
-            color="info"
+            color="secondary"
             component="a"
             target="_blank"
-            href="https://reactjs.org/"
-            clickable
-          />
-          <Chip
-            avatar={<Avatar alt="mui" src={muiLogo} />}
-            label="Mui"
-            variant="outlined"
-            color="warning"
-            component="a"
-            target="_blank"
-            href="https://mui.com/"
+            href="https://www.instagram.com/bhuwan.buda.1/"
             clickable
           />
         </Stack>

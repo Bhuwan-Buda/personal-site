@@ -1,24 +1,31 @@
-$mainHeaderColor: linear-gradient(90deg, #83eaf1, #63a4ff);
+// homepage image css
+$mainFooterColor: linear-gradient(90deg, #83eaf1, #63a4ff);
 
 .image-container {
   width: 100%;
   height: auto;
   margin: auto;
+  padding: 8rem 0;
   text-align: center;
-  background: $mainHeaderColor;
   .MuiGrid-item {
-    padding: 14px 0px;
-    .accordion-container {
-      width: 40%;
-      margin: auto; 
-    }
+    padding: 0px;
   }
   p {
-    font-size: 1.2rem;
-    font-family: "Roboto";
+    font-size: 6.2rem;
+    font-weight: bold;
+    font-family: "Verdana";
     color: rgb(0, 0, 0);
   }
-
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: "Lucida Sans";
+  }
+  i {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-family: "Century Gothic";
+  }
   .image-box {
     width: 16rem;
     height: 14rem;
@@ -31,20 +38,188 @@ $mainHeaderColor: linear-gradient(90deg, #83eaf1, #63a4ff);
 
 @media (max-width: 768px) {
   .image-container {
-    .MuiGrid-item {
-      .accordion-container {
-        width: 66%;
-      }
-    }
+    padding: 4rem 0;
     .image-box {
       width: 12rem;
       height: 12rem;
     }
+    p {
+      font-size: 3.4rem;
+    }
   }
 }
 
-@media (max-width: 400px) {
-  .image-container{
-    .MuiGrid-item {.accordion-container{width: 74%;}}
+// about page css
+.about_container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../Assets/about_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: auto;
+  margin: auto;
+  h4 {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7rem 0 0 0;
+  }
+  p {
+    color: #63a4ff;
+    font-family: "Roboto";
+    width: 40%;
+    margin: auto;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_container {
+    p {
+      width: 60%;
+      padding-bottom: 6.8rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about_container {
+    p {
+      width: 70%;
+      padding-bottom: 6.4rem;
+    }
+  }
+}
+
+// coding quotes css
+
+.coding_quotes_container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../Assets/react_logo.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h4 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: auto;
+    padding: 7rem 0 0 0;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0 7rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .coding_quotes_container {
+    h4 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// education css
+.education_container {
+  .image_container {
+    height: auto;
+    padding: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../Assets/book_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+  .accordion_container {
+    .MuiAccordionSummary-root{
+      background: #eee;
+    }
+    .Mui-expanded {
+      p {
+        color: #63a4ff;
+      }
+    }
+    p {
+      color: rgb(70, 70, 70);
+      font-size: 1.2rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        color: #818181;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .education_container{
+    .image_container {
+      h5 {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+@media (max-width: 599px) {
+  .education_container{
+    .image_container {
+      h5 {
+        font-size: 1.6rem;
+        padding: 4rem 0;
+      }
+    }
+  }
+}
+// react code css
+.react_code_container {
+  .MuiGrid-item {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../Assets/code.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 2rem;
+      color: #fff;
+      padding: 7rem 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+
+// footer css
+.footer_container {
+  background: rgba(0,0,0,1);
+  .MuiGrid-item {
+    padding: 2rem 0;
+    text-align: center;
+    .icon {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
   }
 }

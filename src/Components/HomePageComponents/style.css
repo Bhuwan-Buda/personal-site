@@ -2,20 +2,27 @@
   width: 100%;
   height: auto;
   margin: auto;
+  padding: 8rem 0;
   text-align: center;
-  background: linear-gradient(90deg, #83eaf1, #63a4ff);
 }
 .image-container .MuiGrid-item {
-  padding: 14px 0px;
-}
-.image-container .MuiGrid-item .accordion-container {
-  width: 40%;
-  margin: auto;
+  padding: 0px;
 }
 .image-container p {
-  font-size: 1.2rem;
-  font-family: "Roboto";
+  font-size: 6.2rem;
+  font-weight: bold;
+  font-family: "Verdana";
   color: rgb(0, 0, 0);
+}
+.image-container h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Lucida Sans";
+}
+.image-container i {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-family: "Century Gothic";
 }
 .image-container .image-box {
   width: 16rem;
@@ -27,16 +34,153 @@
 }
 
 @media (max-width: 768px) {
-  .image-container .MuiGrid-item .accordion-container {
-    width: 66%;
+  .image-container {
+    padding: 4rem 0;
   }
   .image-container .image-box {
     width: 12rem;
     height: 12rem;
   }
-}
-@media (max-width: 400px) {
-  .image-container .MuiGrid-item .accordion-container {
-    width: 74%;
+  .image-container p {
+    font-size: 3.4rem;
   }
+}
+.about_container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/about_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: auto;
+  margin: auto;
+}
+.about_container h4 {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 7rem 0 0 0;
+}
+.about_container p {
+  color: #63a4ff;
+  font-family: "Roboto";
+  width: 40%;
+  margin: auto;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+  .about_container p {
+    width: 60%;
+    padding-bottom: 6.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .about_container p {
+    width: 70%;
+    padding-bottom: 6.4rem;
+  }
+}
+.coding_quotes_container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/react_logo.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.coding_quotes_container h4 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: auto;
+  padding: 7rem 0 0 0;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.coding_quotes_container p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 0 7rem 0;
+}
+
+@media (max-width: 768px) {
+  .coding_quotes_container h4 {
+    font-size: 2rem;
+  }
+}
+.education_container .image_container {
+  height: auto;
+  padding: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/book_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education_container .image_container h5 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.education_container .accordion_container .MuiAccordionSummary-root {
+  background: #eee;
+}
+.education_container .accordion_container .Mui-expanded p {
+  color: #63a4ff;
+}
+.education_container .accordion_container p {
+  color: rgb(70, 70, 70);
+  font-size: 1.2rem;
+}
+.education_container .accordion_container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.education_container .accordion_container ul li {
+  color: #818181;
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .education_container .image_container h5 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 599px) {
+  .education_container .image_container h5 {
+    font-size: 1.6rem;
+    padding: 4rem 0;
+  }
+}
+.react_code_container .MuiGrid-item {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../Assets/code.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.react_code_container .MuiGrid-item p {
+  font-size: 2rem;
+  color: #fff;
+  padding: 7rem 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer_container {
+  background: rgb(0, 0, 0);
+}
+.footer_container .MuiGrid-item {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer_container .MuiGrid-item .icon {
+  color: #fff;
+}
+.footer_container .MuiGrid-item p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

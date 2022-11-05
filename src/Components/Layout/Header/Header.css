@@ -1,9 +1,6 @@
 .header-container .MuiAppBar-root {
   background: linear-gradient(90deg, #83eaf1, #63a4ff);
   box-shadow: none;
-  border-width: 0px 0px 1px 0px;
-  border-style: solid;
-  border-color: rgb(238, 228, 228);
 }
 .header-container .header-link {
   display: inline-block;
@@ -68,6 +65,20 @@
 }
 .header-container .sidebar-toggler-button {
   color: rgb(37, 37, 37);
+}
+.header-container .profile_image {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 5%;
+}
+.header-container .profile_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
 
 .drawer-container .MuiPaper-root {

@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
+import Stack from "@mui/material/Stack";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -16,9 +17,10 @@ import Slide from "@mui/material/Slide";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import { NavLink } from "react-router-dom";
+import image from "../../../Assets/image.jpg";
 import "./Header.css";
 
-const drawerWidth = 180;
+const drawerWidth = 230;
 const navItems = [
   { id: 1, title: "Home", link: "/", className: "header-link" },
   { id: 2, title: "About", link: "/about", className: "header-link" },
@@ -112,15 +114,35 @@ function Header(props) {
                 sx={{ display: { xs: "none", sm: "block", md: "block" } }}
                 className="nav-item-container"
               >
-                {navItems.map((item) => (
-                  <NavLink
-                    key={item?.id}
-                    to={item?.link}
-                    exact={item?.link === "/" ? true : false}
-                    children={item?.title}
-                    className={item?.className}
-                  />
-                ))}
+                <Stack
+                  direction={{ xs: "column", sm: "row", md: "row" }}
+                  spacing={{ xs: 1, sm: 1, md: 2 }}
+                  divider={
+                    <Divider
+                      orientation="vertical"
+                      flexItem
+                      sx={{ color: "#ddd", height: "auto" }}
+                    />
+                  }
+                >
+                  {navItems.map((item) => (
+                    <NavLink
+                      key={item?.id}
+                      to={item?.link}
+                      exact={item?.link === "/" ? true : false}
+                      children={item?.title}
+                      className={item?.className}
+                    />
+                  ))}
+                </Stack>
+              </Box>
+              <Box
+                sx={{ display: { xs: "block", sm: "block", md: "block" } }}
+                className="profile_image"
+              >
+                <NavLink to="/" exact>
+                  <img src={image} alt="profile" />
+                </NavLink>
               </Box>
             </Toolbar>
           </AppBar>
