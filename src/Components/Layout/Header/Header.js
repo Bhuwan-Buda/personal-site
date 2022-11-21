@@ -164,7 +164,6 @@ function Header(props) {
                 "& .MuiDrawer-paper": {
                   boxSizing: "border-box",
                   width: drawerWidth,
-                  background: "#eee",
                 },
               }}
             >

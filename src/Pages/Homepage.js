@@ -10,10 +10,10 @@ const Homepage = () => {
     <>
       <HomepageImage />
       {/* <ReactCode /> */}
-      <AboutMe />
+      {/* <AboutMe />
       <CodingQuote />
       <Education />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

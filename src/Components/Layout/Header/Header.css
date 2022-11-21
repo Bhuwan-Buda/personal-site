@@ -1,5 +1,5 @@
 .header-container .MuiAppBar-root {
-  background: linear-gradient(90deg, #83eaf1, #63a4ff);
+  background: linear-gradient(90deg, #c3a2fe, #9358fd);
   box-shadow: none;
 }
 .header-container .header-link {
@@ -7,7 +7,7 @@
   position: relative;
   text-decoration: none;
   margin: 10px;
-  color: rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
   font-family: "Harrington";
   font-weight: bold;
 }
@@ -19,7 +19,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(0, 0, 0);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -28,7 +28,7 @@
   transform-origin: bottom left;
 }
 .header-container .header-link.active {
-  color: rgb(219, 43, 43);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .header-container .header-link.active:after {
@@ -39,7 +39,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(219, 43, 43);
+  background-color: rgb(255, 255, 255);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -48,11 +48,11 @@
   transform-origin: bottom left;
 }
 .header-container .name-symbol {
-  color: rgb(0, 107, 157);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font-family: "Mangal";
   margin-left: 5%;
-  border: 2px solid red;
+  border: 2px solid #fff;
   padding: 0px 8px;
   font-weight: bold;
 }
@@ -64,7 +64,7 @@
   margin: auto;
 }
 .header-container .sidebar-toggler-button {
-  color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
 }
 .header-container .profile_image {
   width: 2.2rem;
@@ -82,13 +82,13 @@
 }
 
 .drawer-container .MuiPaper-root {
-  background-color: linear-gradient(90deg, #83eaf1, #63a4ff);
+  background: linear-gradient(90deg, #c3a2fe, #9358fd);
 }
 .drawer-container .name-symbol {
-  color: rgb(0, 107, 157);
+  color: rgb(255, 255, 255);
   font-family: "Mangal";
   margin-left: 5%;
-  border: 2px solid red;
+  border: 2px solid #fff;
   padding: 0px 8px;
   font-weight: bold;
   width: 32px;
@@ -103,7 +103,7 @@
   position: relative;
   text-decoration: none;
   margin: 10px;
-  color: rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
   font-family: "Harrington";
   font-weight: bold;
 }
@@ -115,7 +115,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(0, 0, 0);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -124,7 +124,7 @@
   transform-origin: bottom left;
 }
 .drawer-container .header-link.active {
-  color: rgb(219, 43, 43);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .drawer-container .header-link.active:after {
@@ -135,7 +135,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(219, 43, 43);
+  background-color: rgb(255, 255, 255);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

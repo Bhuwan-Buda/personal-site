@@ -43,6 +43,13 @@ const PrivateRoutes = () => {
           />
           <Route
             exact
+            path="/personal-site"
+            render={(props) => {
+              return <Homepage {...props} />;
+            }}
+          />
+          <Route
+            exact
             path="/about"
             render={(props) => {
               return <AboutPage {...props} />;
