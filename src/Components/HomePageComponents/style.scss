@@ -5,10 +5,10 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
   width: 100%;
   margin: auto;
   padding: 6rem 0;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  flex-flow: column !important;
+  align-items: center !important;
+  justify-content: center !important;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../../Assets/about_image.jpg");
   background-repeat: no-repeat;
