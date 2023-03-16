@@ -3,9 +3,12 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
 
 .image-container {
   width: 100%;
-  height: auto;
   margin: auto;
   padding: 6rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../../Assets/about_image.jpg");
   background-repeat: no-repeat;
@@ -21,13 +24,13 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
     background: -webkit-linear-gradient(90deg, #c3a2fe, #9358fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-family: "Verdana";
+    font-weight: 500;
+    font-family: "Poppins";
   }
   h5 {
     font-size: 1.6rem;
     font-weight: 300;
-    font-family: "Lucida Sans";
+    font-family: "Poppins";
     color: rgb(255, 255, 255);
   }
   i {
@@ -42,7 +45,8 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
       .MuiFab-root {
         background: $mainColor;
         text-transform: none;
-        font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
       }
       #SpeedDialforlinks-actions {
         flex-direction: row;
@@ -53,6 +57,21 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
   }
 }
 
+@media (min-width: 363px) {
+  .image-container {
+    height: calc(100vh - 48px);
+  }
+}
+@media (min-width: 601px) {
+  .image-container {
+    height: calc(100vh - 64px);
+  }
+}
+@media (max-width: 362px) {
+  .image-container {
+    height: calc(100vh - 56px);
+  }
+}
 @media (max-width: 768px) {
   .image-container {
     padding: 4rem 0;
@@ -62,81 +81,6 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
     }
     p {
       font-size: 3.4rem;
-    }
-  }
-}
-
-// about page css
-.about_container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../Assets/about_image.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  height: auto;
-  margin: auto;
-  h4 {
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 7rem 0 0 0;
-  }
-  p {
-    color: #63a4ff;
-    font-family: "Roboto";
-    width: 40%;
-    margin: auto;
-    padding-bottom: 7rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .about_container {
-    p {
-      width: 60%;
-      padding-bottom: 6.8rem;
-    }
-  }
-}
-@media (max-width: 500px) {
-  .about_container {
-    p {
-      width: 70%;
-      padding-bottom: 6.4rem;
-    }
-  }
-}
-
-// coding quotes css
-
-.coding_quotes_container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../Assets/react_logo.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  h4 {
-    font-size: 2.4rem;
-    text-align: center;
-    margin: auto;
-    padding: 7rem 0 0 0;
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  p {
-    color: #fff;
-    font-size: 1rem;
-    text-align: center;
-    padding: 0 0 7rem 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .coding_quotes_container {
-    h4 {
-      font-size: 2rem;
     }
   }
 }
@@ -201,27 +145,6 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
         font-size: 1.6rem;
         padding: 4rem 0;
       }
-    }
-  }
-}
-// react code css
-.react_code_container {
-  .MuiGrid-item {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("../../Assets/code.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p {
-      font-size: 2rem;
-      color: #fff;
-      padding: 7rem 0;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   }
 }

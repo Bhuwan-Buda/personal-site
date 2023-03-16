@@ -57,8 +57,7 @@
   font-weight: bold;
 }
 .header-container .name-symbol:hover {
-  -webkit-animation: flick 2s 1;
-          animation: flick 2s 1;
+  animation: flick 2s 1;
 }
 .header-container .nav-item-container {
   margin: auto;
@@ -95,8 +94,7 @@
   margin: 10px auto;
 }
 .drawer-container .name-symbol:hover {
-  -webkit-animation: flick 2s 1;
-          animation: flick 2s 1;
+  animation: flick 2s 1;
 }
 .drawer-container .header-link {
   display: inline-block;
@@ -142,15 +140,6 @@
 .drawer-container .header-link.active:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-@-webkit-keyframes flick {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes flick {

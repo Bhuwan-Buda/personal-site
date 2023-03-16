@@ -23,16 +23,17 @@ const links = [
   },
   {
     id: 3,
-    icon: <LinkedInIcon sx={{ color: "#0e76a8 " }} />,
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/bhuwan-buda-a7538b180/",
-  },
-  {
-    id: 4,
     icon: <InstagramIcon sx={{ color: "#8a3ab9" }} />,
     name: "Instagram",
     href: "https://www.instagram.com/bhuwan.buda.1/",
   },
+  {
+    id: 4,
+    icon: <LinkedInIcon sx={{ color: "#0e76a8 " }} />,
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/bhuwan-buda-a7538b180/",
+  },
+  
 ];
 
 const HomepageImage = () => {
@@ -58,8 +59,8 @@ const HomepageImage = () => {
       <Grid item xs={12}>
         <Typography variant="subtitle1" component="i">
           A Front-End Web Developer from Kathmandu with a year of <br />
-          experience who is comfortable working with <br />
-          JavaScript, HTML, CSS, React, MUI and responsive web design
+          experience who is comfortable working with JavaScript, HTML, CSS,{" "}
+          <br /> SCSS, Bootstrap, React.js, MUI and responsive web design
           <br /> to deliver exceptional customer experience.
         </Typography>
       </Grid>
