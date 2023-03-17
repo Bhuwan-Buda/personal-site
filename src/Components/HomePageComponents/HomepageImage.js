@@ -6,6 +6,7 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import contactQr from "../../Assets/contact-qr.png";
 import "./style.css";
 
 const links = [
@@ -33,7 +34,6 @@ const links = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/bhuwan-buda-a7538b180/",
   },
-  
 ];
 
 const HomepageImage = () => {
@@ -46,17 +46,17 @@ const HomepageImage = () => {
       alignItems="center"
       className="image-container"
     >
-      <Grid item xs={12}>
+      <Grid item xs={12} data-aos="fade-right">
         <Typography variant="body1" component="p">
           - HELLO -
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} data-aos="fade-left">
         <Typography variant="body2" component="h5">
           I'm <strong>Bhuwan</strong>
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} data-aos="flip-up">
         <Typography variant="subtitle1" component="i">
           A Front-End Web Developer from Kathmandu with a year of <br />
           experience who is comfortable working with JavaScript, HTML, CSS,{" "}
@@ -64,7 +64,7 @@ const HomepageImage = () => {
           <br /> to deliver exceptional customer experience.
         </Typography>
       </Grid>
-      <Grid item xs={12} className="social-links-container">
+      <Grid item xs={12} className="social-links-container" data-aos="zoom-in">
         <SpeedDial
           ariaLabel="SpeedDial for links"
           FabProps={{ variant: "extended" }}
@@ -74,13 +74,13 @@ const HomepageImage = () => {
         >
           {links.map((link) => (
             <SpeedDialAction
-              key={link.name}
+              key={link.id}
               icon={link.icon}
               tooltipTitle={link.name}
               component="a"
               target="_blank"
               tooltipPlacement="top"
-              href={link.href}
+              href={link.href ? link.href : ""}
             />
           ))}
         </SpeedDial>
