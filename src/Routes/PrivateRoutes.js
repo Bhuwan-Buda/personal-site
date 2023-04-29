@@ -49,20 +49,6 @@ const PrivateRoutes = () => {
             }}
           />
           <Route
-            exact
-            path="/about"
-            render={(props) => {
-              return <AboutPage {...props} />;
-            }}
-          />
-          <Route
-            exact
-            path="/contact"
-            render={(props) => {
-              return <ContactPage {...props} />;
-            }}
-          />
-          <Route
             path="*"
             render={(props) => {
               return <PageNotFound {...props} />;

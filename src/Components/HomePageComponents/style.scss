@@ -2,8 +2,9 @@
 $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
 
 .image-container {
-  width: 100%;
-  margin: auto;
+  width: 100% !important;
+  margin: 0px !important;
+  height: 100vh;
   padding: 6rem 0;
   display: flex !important;
   flex-flow: column !important;
@@ -47,6 +48,10 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
         text-transform: none;
         font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
           Arial, sans-serif;
+        transition: all ease 0.25s;
+      }
+      .MuiFab-root:hover {
+        animation: wave 0.75s ease-out;
       }
       #SpeedDialforlinks-actions {
         flex-direction: row;
@@ -57,19 +62,14 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
   }
 }
 
-@media (min-width: 363px) {
-  .image-container {
-    height: calc(100vh - 48px);
+@keyframes wave {
+  0% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 0px rgba(195, 162, 254, 0.7);
   }
-}
-@media (min-width: 601px) {
-  .image-container {
-    height: calc(100vh - 64px);
-  }
-}
-@media (max-width: 362px) {
-  .image-container {
-    height: calc(100vh - 56px);
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(76, 175, 80, 0);
   }
 }
 @media (max-width: 768px) {
@@ -81,85 +81,6 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
     }
     p {
       font-size: 3.4rem;
-    }
-  }
-}
-
-// education css
-.education_container {
-  .image_container {
-    height: auto;
-    padding: 16px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../Assets/book_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h5 {
-      font-size: 2rem;
-      text-align: center;
-      color: #fff;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-  }
-  .accordion_container {
-    .MuiAccordionSummary-root {
-      background: #eee;
-    }
-    .Mui-expanded {
-      p {
-        color: #63a4ff;
-      }
-    }
-    p {
-      color: rgb(70, 70, 70);
-      font-size: 1.2rem;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      li {
-        color: #818181;
-      }
-    }
-  }
-}
-
-@media (min-width: 600px) and (max-width: 799px) {
-  .education_container {
-    .image_container {
-      h5 {
-        font-size: 1.6rem;
-      }
-    }
-  }
-}
-@media (max-width: 599px) {
-  .education_container {
-    .image_container {
-      h5 {
-        font-size: 1.6rem;
-        padding: 4rem 0;
-      }
-    }
-  }
-}
-
-// footer css
-.footer_container {
-  background: rgba(0, 0, 0, 1);
-  .MuiGrid-item {
-    padding: 2rem 0;
-    text-align: center;
-    .icon {
-      color: #fff;
-    }
-    p {
-      color: #fff;
     }
   }
 }

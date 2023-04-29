@@ -6,7 +6,8 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import contactQr from "../../Assets/contact-qr.png";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import "./style.css";
 
 const links = [
@@ -34,6 +35,18 @@ const links = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/bhuwan-buda-a7538b180/",
   },
+  {
+    id: 5,
+    icon: <EmailIcon sx={{ color: "#8a3ab9" }} />,
+    name: "Mail",
+    href: "mailto:bhuwanbuda143@gmail.com",
+  },
+  {
+    id: 6,
+    icon: <PhoneInTalkIcon sx={{ color: "#444444 " }} />,
+    name: "Call",
+    href: "tel:9868792901",
+  },
 ];
 
 const HomepageImage = () => {
@@ -58,7 +71,9 @@ const HomepageImage = () => {
       </Grid>
       <Grid item xs={12} data-aos="flip-up">
         <Typography variant="subtitle1" component="i">
-          A Front-End Web Developer from Kathmandu with a year of <br />
+          A Front-End Web Developer
+          <strong> (at Soori Technology Pvt. Ltd.)</strong> from Kathmandu with
+          a year of <br />
           experience who is comfortable working with JavaScript, HTML, CSS,{" "}
           <br /> SCSS, Bootstrap, React.js, MUI and responsive web design
           <br /> to deliver exceptional customer experience.
