@@ -13,12 +13,13 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  overflow: hidden;
 }
 .image-container .MuiGrid-item {
   padding: 0px;
 }
 .image-container p {
-  font-size: 6.2rem;
+  font-size: 5.8rem;
   background: -webkit-linear-gradient(90deg, #c3a2fe, #9358fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,21 +39,31 @@
   color: rgb(255, 255, 255);
 }
 .image-container .social-links-container {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
-.image-container .social-links-container .speedDial-container .MuiFab-root {
+.image-container .social-links-container .speedDial-container button.MuiFab-root {
   background: linear-gradient(90deg, #c3a2fe, #9358fd);
   text-transform: none;
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   transition: all ease 0.25s;
 }
-.image-container .social-links-container .speedDial-container .MuiFab-root:hover {
+.image-container .social-links-container .speedDial-container button.MuiFab-root:hover {
   animation: wave 0.75s ease-out;
 }
 .image-container .social-links-container .speedDial-container #SpeedDialforlinks-actions {
   flex-direction: row;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+.image-container .social-links-container .speedDial-container #SpeedDialforlinks-actions .MuiButtonBase-root {
+  background: none;
+}
+.image-container .social-links-container .speedDial-container #SpeedDialforlinks-actions .MuiButtonBase-root:nth-child(4) {
+  transform: scale(5);
+  position: absolute;
+  top: -140px;
+  left: 41.5%;
 }
 
 @keyframes wave {
@@ -74,6 +85,6 @@
     height: 12rem;
   }
   .image-container p {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

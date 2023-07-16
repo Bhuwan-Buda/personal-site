@@ -17,11 +17,12 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
   background-position: center;
   background-size: cover;
   text-align: center;
+  overflow: hidden;
   .MuiGrid-item {
     padding: 0px;
   }
   p {
-    font-size: 6.2rem;
+    font-size: 5.8rem;
     background: -webkit-linear-gradient(90deg, #c3a2fe, #9358fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -41,22 +42,32 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
     color: rgb(255, 255, 255);
   }
   .social-links-container {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     .speedDial-container {
-      .MuiFab-root {
+      button.MuiFab-root {
         background: $mainColor;
         text-transform: none;
         font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
           Arial, sans-serif;
         transition: all ease 0.25s;
       }
-      .MuiFab-root:hover {
+      button.MuiFab-root:hover {
         animation: wave 0.75s ease-out;
       }
       #SpeedDialforlinks-actions {
         flex-direction: row;
         margin: 0;
         padding: 0;
+        position: relative;
+        .MuiButtonBase-root {
+          background: none;
+        }
+        .MuiButtonBase-root:nth-child(4) {
+          transform: scale(5);
+          position: absolute;
+          top: -140px;
+          left: 41.5%;
+        }
       }
     }
   }
@@ -80,7 +91,7 @@ $mainColor: linear-gradient(90deg, #c3a2fe, #9358fd);
       height: 12rem;
     }
     p {
-      font-size: 3.4rem;
+      font-size: 3.2rem;
     }
   }
 }
