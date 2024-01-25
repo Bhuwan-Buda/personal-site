@@ -25,8 +25,6 @@ export const lazyWithReload = (componentImport) =>
   });
 
 const Homepage = lazyWithReload(() => import("../Pages/Homepage"));
-const AboutPage = lazyWithReload(() => import("../Pages/AboutPage"));
-const ContactPage = lazyWithReload(() => import("../Pages/ContactPage"));
 const PageNotFound = lazyWithReload(() => import("../Pages/PageNotFound"));
 
 const PrivateRoutes = () => {
